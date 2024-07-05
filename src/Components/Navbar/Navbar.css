@@ -1,0 +1,52 @@
+
+nav {
+    background-color: rgba(50,53,44,255);
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    height: auto; /* Adjust height to auto for better responsiveness */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 10px; /* Add padding for better clickability */
+}
+
+@media screen and (max-width: 700px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center;
+        max-width: 1800px;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add margin between items */
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+}
+
+/* Add margin to the main content to avoid overlap with the navbar */
+.main-content {
+    margin-top: 60px; /* Adjust this value based on the height of your navbar */
+}

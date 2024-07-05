@@ -1,0 +1,96 @@
+
+.center-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top : 90px;
+    flex-wrap: wrap; 
+}
+
+section{
+    padding: 20px;
+}
+
+.aboutme{
+    color : white;
+    max-width: 600px;
+}
+
+.aboutme h1{
+    font-size: 35px;
+    margin-bottom : 40px;
+    color: rgba(50,53,44,255);
+}
+
+.aboutme span{
+    font-size: 15px;
+    color: rgb(223, 207, 207);
+}
+.aboutme p{
+    font-size: 22px;
+    text-indent: 50px;
+    font-weight: 500;
+    
+}
+
+.myimage img{
+    width: 400px;
+    border: none;
+    border-radius: 40%;
+    height: 450px;
+}
+
+.btn-go{
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.btn-go button{
+    height: 80px;
+    width: 150px;
+    border-radius: 10px;
+    background: rgb(48, 51, 49);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-go button:hover{
+    background: rgb(120, 122, 121);
+}
+
+@media screen and (max-width: 768px) {
+    .center-container {
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 60px;
+    }
+    section {
+        padding-top: 130px;
+    }
+
+    .aboutme h1 {
+        font-size: 28px;
+    }
+
+    .aboutme p {
+        font-size: 18px;
+        text-indent: 30px;
+    }
+
+    .myimage img {
+        width: 300px;
+        height: auto;
+    }
+
+    .btn-go button {
+        height: 60px;
+        width: 120px;
+        font-size: 16px;
+        margin-top: 0px;
+    }
+}

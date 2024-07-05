@@ -1,0 +1,46 @@
+.experiences{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experiences h2{
+    font-size: 40px;
+}
+
+.experiences .line{
+    width: 370px;
+    background-color: rgb(0, 0, 0);
+    height: 2px;
+    margin-bottom: 30px;
+}
+
+.experiences #listOf{
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 600;
+
+}
+
+.company{
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+    color: rgb(31, 29, 29);
+}
+
+#date{
+    color : rgb(36, 35, 35);
+    margin-left: 50px;
+}
+
+@media (max-width: 800px) {
+    .experiences h2 {
+        font-size: 30px;
+    }
+
+    h4{
+        font-size: 20px;
+    }
+
+}
